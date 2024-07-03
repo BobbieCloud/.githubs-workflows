@@ -29,6 +29,6 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-west-2'
       run: |
-        aws lambda update-function-code \\
-          --function-name FetchResume \\
+        aws lambda update-function-code 
+          --function-name FetchResume 
           --zip-file fileb://function.zip
